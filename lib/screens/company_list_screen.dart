@@ -198,7 +198,7 @@ class _Hero extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 8),
                         child: Text(
-                          'your companies',
+                          'Juara inovasi pasifik Sdn Bhd',
                           style: AppFonts.display(
                             size: 120,
                             weight: FontWeight.w400,
@@ -253,7 +253,7 @@ class _Intro extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text('Overview', style: AppFonts.body(color: AppColors.grey)),
-        Text('What this is', style: AppFonts.body(weight: FontWeight.w600)),
+        Text('Full stack assignment', style: AppFonts.body(weight: FontWeight.w600)),
       ],
     );
     final right = Column(
@@ -353,7 +353,7 @@ class _CompanyCarousel extends StatelessWidget {
           );
         }
 
-        // Kalau semua card muat, letak tengah; kalau tak muat baru boleh scroll
+        // letak tengah; kalau tak muat baru boleh scroll
         final sidePadding = wide ? 16.0 : 24.0;
         final arrowsWidth = wide ? 2 * (44 + 24) : 0;
         final available = constraints.maxWidth - arrowsWidth - 2 * sidePadding;
