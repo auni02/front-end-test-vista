@@ -58,6 +58,7 @@ class CompanyProvider extends ChangeNotifier {
       description: description,
       price: price,
     );
+    // Buat list baru, jangan edit yang lama. Company tu final, so kita copyWith je
     _companies = [
       for (final c in _companies)
         c.id == companyId ? c.copyWith(services: [...c.services, service]) : c,

@@ -40,6 +40,7 @@ class _CreateCompanyScreenState extends State<CreateCompanyScreen> {
             name: _nameController.text.trim(),
             registrationNumber: _registrationController.text.trim(),
           );
+      // Lepas await, user maybe dah tutup screen ni. Check dulu sebelum guna context, kalau tak crash
       if (!mounted) return;
       showCuteSnackBar(context, '${company.name} was added');
       Navigator.of(context).pop(company);

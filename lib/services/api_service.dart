@@ -100,7 +100,7 @@ class ApiService {
     }
   }
 
-  // Backend hantar { message, errors?: [{ field, message }] }, cannot change
+  // Backend hantar { message, errors?: [{ field, message }] }. Kalau backend tukar format, sini kena tukar sekali
   String _errorMessage(dynamic body, int statusCode) {
     if (body is Map<String, dynamic>) {
       final errors = body['errors'];
